@@ -1,1 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PopChunk LLC — iOS Apps</title>
+<meta name="description" content="PopChunk LLC is an independent iOS app studio based in Michigan, making simple, focused apps for productivity, fitness and health.">
+<style>
+  :root {
+    --bg: #fbfaf7; --surface: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --line: #e6e3dc; --accent: #ff5a36; --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111112; --surface: #1c1c1e; --text: #f5f5f7; --muted: #a1a1a6; --line: #2c2c2e; --accent: #ff6b4a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: 15px; }
+  nav a:hover { color: var(--text); }
+  .hero { padding: 64px 0 48px; }
+  .hero h1 { font-size: clamp(36px, 7vw, 56px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 16px; }
+  .hero p { font-size: 20px; color: var(--muted); max-width: 600px; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+    padding: 12px 22px; border-radius: 999px; font-weight: 600; }
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px;
+    text-decoration: none; color: var(--text); display: block; transition: transform .15s ease; }
+  .card:hover { transform: translateY(-2px); }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+  .card .more { color: var(--accent); font-size: 14px; font-weight: 600; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); }
+  @media (max-width: 520px) { nav a { margin-left: 14px; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="/">Pop<span>Chunk</span></a>
+      <nav>
+        <a href="#apps">Apps</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
 
+    <div class="hero">
+      <h1>Small apps that help you get things done.</h1>
+      <p>PopChunk LLC is an independent iOS app studio in Michigan. We build simple, focused apps for productivity, fitness and health.</p>
+      <a class="btn" href="https://apps.apple.com/us/developer/david-koontz/id1824267753">See our apps on the App Store</a>
+    </div>
+
+    <section id="apps">
+      <h2>Our apps</h2>
+      <div class="grid">
+        <a class="card" href="https://apps.apple.com/us/app/popchunk-adhd-task-breakdown/id6748092210">
+          <h3>PopChunk</h3>
+          <p>Break big goals into tiny, doable tasks. Made for ADHD brains.</p>
+          <span class="more">View on App Store →</span>
+        </a>
+        <a class="card" href="https://apps.apple.com/us/app/pushuplock-push-up-blocker/id6753698904">
+          <h3>PushUpLock</h3>
+          <p>Lock distracting apps until you finish your daily push-ups.</p>
+          <span class="more">View on App Store →</span>
+        </a>
+        <a class="card" href="https://apps.apple.com/us/app/painpanda-symptom-tracker/id6758467035">
+          <h3>PainPanda</h3>
+          <p>A private symptom tracker and health journal.</p>
+          <span class="more">View on App Store →</span>
+        </a>
+        <a class="card" href="https://apps.apple.com/us/app/takeoff-check-list/id6749904520">
+          <h3>Takeoff Check List</h3>
+          <p>A simple daily to-do list.</p>
+          <span class="more">View on App Store →</span>
+        </a>
+        <a class="card" href="https://apps.apple.com/us/app/super-basic-calculator/id6748281902">
+          <h3>Super Basic Calculator</h3>
+          <p>A no-frills calculator with a running total and line history.</p>
+          <span class="more">View on App Store →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Support &amp; contact</h2>
+      <p>Questions, bug reports, feedback or business inquiries? Email us at
+        <a href="mailto:dave@popchunk.com">dave@popchunk.com</a>. We usually reply within two business days.</p>    </section>
+
+    <footer>
+      © 2026 PopChunk LLC · Michigan, USA ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="mailto:dave@popchunk.com">dave@popchunk.com</a>
+    </footer>
+  </div>
+</body>
+</html>
